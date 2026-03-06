@@ -10,4 +10,6 @@ public class IronschoolApplication {
 		SpringApplication.run(IronschoolApplication.class, args);
 	}
 
+	
+
 }
