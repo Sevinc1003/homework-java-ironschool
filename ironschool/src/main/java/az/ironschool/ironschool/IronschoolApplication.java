@@ -1,5 +1,6 @@
 package az.ironschool.ironschool;
 
+import az.ironschool.ironschool.controllers.CreateSchool;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,8 +9,17 @@ public class IronschoolApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(IronschoolApplication.class, args);
+		CreateSchool.createSchool();
 	}
 
-	
+//	@Bean
+//	public CommandLineRunner run(TeacherService teacherService){
+//		return args -> {
+//			Scanner sc = new Scanner (System.in);
+//			System.out.println("School creation has started...");
+//
+//			createSchool (teacherService,sc);
+//		};
+//	}
 
 }

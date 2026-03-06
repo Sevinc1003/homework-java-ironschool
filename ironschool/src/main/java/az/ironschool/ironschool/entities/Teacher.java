@@ -15,6 +15,9 @@ public class Teacher {
         this.salary = salary;
     }
 
+    public Teacher () {
+        this.teacherId = UUID.randomUUID().toString();
+    }
 
     public String getTeacherId() {
         return teacherId;
