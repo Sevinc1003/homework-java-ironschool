@@ -1,11 +1,10 @@
 package az.ironschool.ironschool.services;
 
+import az.ironschool.ironschool.entities.Teacher;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-import az.ironschool.ironschool.entities.Student;
-import az.ironschool.ironschool.entities.Teacher;
 
 public class TeacherService {
     private static Map<String, Teacher> teachers;
@@ -33,4 +32,6 @@ public class TeacherService {
     }
 
 
+    public void put(String teacherId, Teacher teacher) {
+    }
 }
