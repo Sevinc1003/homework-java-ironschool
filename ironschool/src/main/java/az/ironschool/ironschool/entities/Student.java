@@ -16,6 +16,9 @@ public class Student {
         this.address = address;
         this.email = email;
     }
+    public Student () {
+        this.studentId = UUID.randomUUID().toString();
+    }
 
     public String getStudentId() {
         return studentId;

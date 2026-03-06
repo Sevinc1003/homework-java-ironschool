@@ -16,6 +16,9 @@ public class Course {
         this.name = name;
         this.price = price;
     }
+    public Course () {
+        this.courseId = UUID.randomUUID().toString();
+    }
 
     public String getCourseId() {
         return courseId;
