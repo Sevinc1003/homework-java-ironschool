@@ -16,11 +16,6 @@ public class Teacher {
     }
     
 
-
-    public Teacher() {
-    }
-
-
     public Teacher () {
         this.teacherId = UUID.randomUUID().toString();
     }
