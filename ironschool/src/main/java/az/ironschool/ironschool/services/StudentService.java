@@ -36,7 +36,7 @@ public class StudentService {
         return new ArrayList<>(students.values());
     }
 
-    public Student lookupCourse(String studentId) {
+    public Student lookupStudent(String studentId) {
         return students.get(studentId);
     }
 

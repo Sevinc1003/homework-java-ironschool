@@ -6,37 +6,39 @@ import java.util.List;
 import org.springframework.web.bind.annotation.RestController;
 
 import az.ironschool.ironschool.entities.Student;
+import az.ironschool.ironschool.services.StudentService;
 
-@RestController
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+
+
+@RestController("/students")
 public class StudentController {
 
-
-    // public void enroll(String studentId, String courseId) {
-
-    //     for (Student student : students.values()) {
-
-    //         if (student.getStudentId().equals(studentId)) {
-    //             student.setCourse(courseService.getCourses().get(courseId));
-
-    //             double coursePrice = courseService.getCourses().get(courseId).getPrice();
-    //             double courseProfit = courseService.getCourses().get(courseId).getMoney_earned();
-                
-
-    //             courseService.getCourses().get(courseId).setMoney_earned(coursePrice+ courseProfit);
-    //         }
-    //     }
-    // }
+    private static StudentService studentService;
 
 
- 
+    @PostMapping("/enroll")
+    public void enroll(@RequestParam String studentId, @RequestParam String courseId) {
+        studentService.enroll(studentId, courseId);
+        
+    
+    }
+    
 
-    // public List<Student> showStudents() {
-    //     return new ArrayList<>(students.values());
-    // }
+    @GetMapping("/show-all")
+    public List<Student> showAll(){
+        return studentService.showStudents();
+    }
 
     // public Student lookupCourse(String studentId) {
     //     return students.get(studentId);
     // }
+
+
+    
 
 
 
