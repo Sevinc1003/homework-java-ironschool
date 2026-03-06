@@ -1,7 +1,7 @@
 package az.ironschool.ironschool.controllers;
 
 import az.ironschool.ironschool.services.TeacherService;
-
+import az.ironschool.ironschool.entities.Teacher;
 import java.util.Scanner;
 
 public class CreateSchool {
@@ -27,7 +27,7 @@ public class CreateSchool {
             sc.nextLine();
 
             for (int i = 1; i < teacherCount + 1; i++) {
-                az.ironschool.ironschool.entities.Teacher teacher = new az.ironschool.ironschool.entities.Teacher();
+                Teacher teacher = new Teacher();
                 System.out.println("Enter the name of the teacher number " + i + " : ");
                 String teacherName = sc.nextLine();
                 teacher.setName(teacherName);
@@ -45,7 +45,7 @@ public class CreateSchool {
                     }
                 }
                 if (teacherService != null) {
-                    teacherService.put(teacher.getTeacherId(), teacher);
+                    teacherService.getTeachers().put(teacher.getTeacherId(), teacher);
                 }
 
                 System.out.println("Enter the subject teacher ' " + teacherName + "' teachs: ");
