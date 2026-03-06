@@ -1,4 +1,4 @@
-package main.java.az.ironschool.ironschool.entities;
+package az.ironschool.ironschool.entities;
 
 import java.util.UUID;
 
