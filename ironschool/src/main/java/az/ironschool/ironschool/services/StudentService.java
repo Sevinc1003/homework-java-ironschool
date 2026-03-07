@@ -41,4 +41,11 @@ public class StudentService {
         return students.get(studentId);
     }
 
+    public List<Student> getByCourse(String courseId){
+        return students.values()
+            .stream()
+            .filter(student -> student.getCourse().getCourseId().equals(courseId))
+            .toList();
+    }
+
 }
