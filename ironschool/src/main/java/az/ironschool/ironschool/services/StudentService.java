@@ -6,7 +6,6 @@ import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
-import az.ironschool.ironschool.entities.Course;
 import az.ironschool.ironschool.entities.Student;
 
 @Service
@@ -16,6 +15,8 @@ public class StudentService {
 
     private static CourseService courseService;
 
+
+
     public void enroll(String studentId, String courseId) {
 
         for (Student student : students.values()) {
@@ -24,7 +25,7 @@ public class StudentService {
                 student.setCourse(courseService.getCourses().get(courseId));
 
                 double coursePrice = courseService.getCourses().get(courseId).getPrice();
-                double courseProfit = courseService.getCourses().get(courseId).getMoney_earned();
+                double courseProfit = courseService.getCourses().get(courseId).getMoneyEarned();
                 
 
                 courseService.getCourses().get(courseId).setMoney_earned(coursePrice+ courseProfit);

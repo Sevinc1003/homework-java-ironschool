@@ -7,7 +7,7 @@ public class Course {
     private String courseId;
     private String name;
     private double price;
-    private double money_earned;
+    private double moneyEarned;
     private Teacher teacher;
     private int pageCount;
 
@@ -42,12 +42,12 @@ public class Course {
         this.price = price;
     }
 
-    public double getMoney_earned() {
-        return money_earned;
+    public double getMoneyEarned() {
+        return moneyEarned;
     }
 
-    public void setMoney_earned(double money_earned) {
-        this.money_earned = money_earned;
+    public void setMoney_earned(double moneyEarned) {
+        this.moneyEarned = moneyEarned;
     }
 
     public Teacher getTeacher() {
