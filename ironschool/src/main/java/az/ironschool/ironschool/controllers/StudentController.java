@@ -9,6 +9,7 @@ import az.ironschool.ironschool.entities.Student;
 import az.ironschool.ironschool.services.StudentService;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -33,13 +34,16 @@ public class StudentController {
         return studentService.showStudents();
     }
 
-    // public Student lookupCourse(String studentId) {
-    //     return students.get(studentId);
-    // }
-
+    @GetMapping("/lookup-student/{id}")
+    public Student lookupStudent(@PathVariable String studentId){
+        return studentService.lookupStudent(studentId);
+    }
 
     
-
+    @GetMapping("/get-by-course")
+    public List<Student> getByCourse(@RequestParam String courseId){
+        return studentService.getByCourse(courseId);
+    }
 
 
 }

@@ -33,7 +33,7 @@ public class CourseService {
         return courses.get(courseId);
     }
 
-    public double showProfit(){
+    public double showSchoolProfit(){
        
         double coursesTotal = 0;
         double teachersTotal = 0;
@@ -46,7 +46,7 @@ public class CourseService {
 
         for (Course course : courses.values()) {
 
-            coursesTotal += course.getMoney_earned();
+            coursesTotal += course.getMoneyEarned();
             
         }
 
@@ -55,13 +55,20 @@ public class CourseService {
     }
 
 
+    public double courseProfit(String courseId){
+
+        Course course = courses.get(courseId);
+        return course.getMoneyEarned() - course.getPrice();
+    }
 
 
-    public static Map<String, Course> getCourses() {
+
+// getter and setter
+    public Map<String, Course> getCourses() {
         return courses;
     }
 
-    public static void setCourses(Map<String, Course> courses) {
+    public void setCourses(Map<String, Course> courses) {
         CourseService.courses = courses;
     }
 

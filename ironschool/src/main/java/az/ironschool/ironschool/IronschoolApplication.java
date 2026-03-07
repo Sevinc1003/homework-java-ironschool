@@ -12,14 +12,4 @@ public class IronschoolApplication {
 		CreateSchool.createSchool();
 	}
 
-//	@Bean
-//	public CommandLineRunner run(TeacherService teacherService){
-//		return args -> {
-//			Scanner sc = new Scanner (System.in);
-//			System.out.println("School creation has started...");
-//
-//			createSchool (teacherService,sc);
-//		};
-//	}
-
 }
