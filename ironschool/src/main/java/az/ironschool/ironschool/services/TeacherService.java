@@ -31,7 +31,4 @@ public class TeacherService {
         TeacherService.teachers = teachers;
     }
 
-
-    public void put(String teacherId, Teacher teacher) {
-    }
 }
