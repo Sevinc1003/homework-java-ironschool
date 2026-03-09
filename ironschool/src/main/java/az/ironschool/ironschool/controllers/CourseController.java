@@ -9,9 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 import az.ironschool.ironschool.entities.Course;
 import az.ironschool.ironschool.entities.Teacher;
 import az.ironschool.ironschool.services.CourseService;
+import az.ironschool.ironschool.utils.Logging;
 
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -24,6 +26,7 @@ public class CourseController {
     @PutMapping("/assign")
     public void assign(@RequestParam String teacherId, @RequestParam String courseId){
         courseService.assign(teacherId, courseId);
+
     }
 
 
@@ -47,6 +50,11 @@ public class CourseController {
     @GetMapping("/profit")
     public double courseProfit(@RequestParam String courseId) {
         return courseService.courseProfit(courseId);
+    }
+
+    @DeleteMapping("/delete-course")
+    public void deleteCourse(@RequestParam String id){
+        courseService.deleteCourse(id);
     }
     
 

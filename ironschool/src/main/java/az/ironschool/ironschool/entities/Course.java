@@ -2,14 +2,21 @@ package az.ironschool.ironschool.entities;
 
 import java.util.UUID;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class Course {
 
     private String courseId;
+
+    @NotBlank(message = "name bos ola bilmez")
     private String name;
+
+    @NotBlank(message = "price bos ola bilmez")
     private double price;
+
     private double moneyEarned;
     private Teacher teacher;
-    private int pageCount;
+    private int sold;
 
     public Course(String name, double price) {
         this.courseId = UUID.randomUUID().toString();
@@ -25,6 +32,8 @@ public class Course {
     }
 
 
+
+    //getters and setters
 
     public String getName() {
         return name;
@@ -46,7 +55,7 @@ public class Course {
         return moneyEarned;
     }
 
-    public void setMoney_earned(double moneyEarned) {
+    public void setMoneyEarned(double moneyEarned) {
         this.moneyEarned = moneyEarned;
     }
 
@@ -57,14 +66,14 @@ public class Course {
     public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
-
-    public int getPageCount() {
-        return pageCount;
+    public int getSold() {
+        return sold;
+    }
+    public void setSold(int sold) {
+        this.sold = sold;
     }
 
-    public void setPageCount(int pageCount) {
-        this.pageCount = pageCount;
-    }
+
 
     
 

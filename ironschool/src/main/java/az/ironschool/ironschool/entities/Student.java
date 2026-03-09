@@ -2,12 +2,22 @@ package az.ironschool.ironschool.entities;
 
 import java.util.UUID;
 
+import jakarta.validation.constraints.NotBlank;
+
 public class Student {
 
+
     private String studentId;
+
+    @NotBlank(message = "name bos ola bilmez")
     private String name;
+
+    @NotBlank(message = "address bos ola bilmez")
     private String address;
+
+    @NotBlank(message = "email bos ola bilmez")
     private String email;
+
     private Course course;
 
     public Student(String name, String address, String email) {

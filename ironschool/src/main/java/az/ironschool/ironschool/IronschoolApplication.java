@@ -1,6 +1,5 @@
 package az.ironschool.ironschool;
 
-import az.ironschool.ironschool.controllers.CreateSchool;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,7 +8,7 @@ public class IronschoolApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(IronschoolApplication.class, args);
-		CreateSchool.createSchool();
+
 	}
 
 }
