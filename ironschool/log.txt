@@ -1,0 +1,26 @@
+2026-03-10T00:59:26.539028 ---> new student registered
+2026-03-10T00:59:26.546917400 ---> list of students showed
+2026-03-10T01:00:44.494041300 ---> new student registered
+2026-03-10T01:00:44.497051200 ---> list of students showed
+2026-03-10T01:04:16.889230900 ---> new student registered
+2026-03-10T01:04:16.891273 ---> list of students showed
+2026-03-10T01:06:38.246073300 ---> Student named Leyla enrolled to az.ironschool.ironschool.entities.Course@31edaa7d course
+2026-03-10T01:06:38.248271700 ---> student named Leyla looked up
+2026-03-10T01:06:42.887239700 ---> Student named Ali enrolled to az.ironschool.ironschool.entities.Course@31edaa7d course
+2026-03-10T01:06:48.804679200 ---> list of students showed
+2026-03-10T01:06:52.727763100 ---> list of students showed
+2026-03-10T01:06:57.450444800 ---> student named Ali looked up
+2026-03-10T01:07:02.108471 ---> student named Leyla looked up
+2026-03-10T01:07:06.689399600 ---> returned list of students who have Java course
+2026-03-10T01:09:07.287565800 ---> list of teachers returned
+2026-03-10T01:09:11.200922900 ---> list of teachers returned
+2026-03-10T01:09:15.600185 ---> teacher named T1 looked up
+2026-03-10T01:12:53.555568100 ---> teacher named John looked up
+2026-03-10T01:12:57.205865700 ---> teacher named John looked up
+2026-03-10T01:13:01.143146900 ---> teacher named John looked up
+2026-03-10T01:27:55.724181800 ---> course Spring deleted
+2026-03-10T01:27:55.765465 ---> course name Spring looked up
+2026-03-10T01:27:55.779967100 ---> school's profit is: -3300.0
+2026-03-10T01:27:55.786517900 ---> Teacher John assingned to 1fcf23c4-d7a8-40b9-a745-bfec4c80be06 course
+2026-03-10T01:27:55.791514 ---> courses showed
+2026-03-10T01:27:55.803713 ---> course Java's profit is: 200.0

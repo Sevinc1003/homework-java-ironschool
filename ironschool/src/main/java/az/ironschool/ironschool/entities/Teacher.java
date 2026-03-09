@@ -25,7 +25,7 @@ public class Teacher {
 
     
     
-    public Teacher(String name, double salary, String subject) {
+    public Teacher(String name, String subject, double salary) {
         this.teacherId = UUID.randomUUID().toString();
         this.name = name;
         this.salary = salary;

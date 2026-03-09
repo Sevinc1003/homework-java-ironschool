@@ -10,9 +10,21 @@ import az.ironschool.ironschool.utils.Logging;
 
 public class CourseService {
 
-    private static Map<String, Course> courses;
+    private  Map<String, Course> courses;
 
-    private static TeacherService teacherService;
+    private  TeacherService teacherService;
+
+
+
+
+    public CourseService(TeacherService teacherService) {
+        this.teacherService = teacherService;
+    }
+    
+
+
+    public CourseService() {
+    }
 
 
 
@@ -84,7 +96,7 @@ public class CourseService {
     }
 
     public void setCourses(Map<String, Course> courses) {
-        CourseService.courses = courses;
+       this.courses = courses;
     }
 
     
