@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.logging.Log;
 import org.springframework.stereotype.Service;
 
 import az.ironschool.ironschool.dtos.NewStudentDTO;
@@ -19,7 +18,8 @@ public class StudentService {
     private static CourseService courseService;
 
     public void registerNewStudent(NewStudentDTO dto) {
-        new Student(dto.getName(), dto.getAddress(), dto.getEmail());
+        Student newSt = new Student(dto.getName(), dto.getAddress(), dto.getEmail());
+        students.put(newSt.getStudentId(), newSt);
 
         Logging.log("new student registered");
     }

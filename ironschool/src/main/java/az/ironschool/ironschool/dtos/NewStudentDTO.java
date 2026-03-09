@@ -9,6 +9,12 @@ public class NewStudentDTO {
         private String email;
 
         
+
+        public NewStudentDTO(String name, String address, String email) {
+            this.name = name;
+            this.address = address;
+            this.email = email;
+        }
         public String getName() {
             return name;
         }

@@ -21,8 +21,8 @@ public class TeacherService {
 
     public Teacher lookupTeacher(String teacherId) {
 
-        Logging.log("teacher named "+ teachers.get(teacherId).getName() +" looked up");
-
+        if(teachers.get(teacherId)!= null){Logging.log("teacher named "+ teachers.get(teacherId).getName() +" looked up");}
+        else{Logging.log("that teacher not found");}
         return teachers.get(teacherId);
     }
 

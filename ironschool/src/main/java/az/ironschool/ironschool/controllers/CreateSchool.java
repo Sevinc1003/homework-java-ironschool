@@ -1,4 +1,4 @@
-package az.ironschool.ironschool.utils;
+package az.ironschool.ironschool.controllers;
 
 import az.ironschool.ironschool.services.TeacherService;
 import az.ironschool.ironschool.entities.Teacher;
